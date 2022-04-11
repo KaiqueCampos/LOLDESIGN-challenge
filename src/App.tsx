@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const callPrice = [
+const data = [
   {
     origin: "011",
     destination: "016",
@@ -47,12 +47,11 @@ function App() {
       ? 30.00
       : (cellPhonePlan === "FaleMais 60" ? 60.00 : 120.00)
 
-    const callInformation = callPrice.filter(call => call.origin === callOrigin && call.destination === callDestination)
+    const callInformation = data.filter(call => call.origin === callOrigin && call.destination === callDestination)
 
     const pricePerMinute = callInformation[0].pricePerMinute
     setPriceWithoutPlan(pricePerMinute * connectionTime)
 
-    
     if (planDiscount < connectionTime) {
       const surplusMinutes = connectionTime - planDiscount
       const tariff = (pricePerMinute * 10) / 100
