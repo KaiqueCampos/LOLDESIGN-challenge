@@ -1,4 +1,5 @@
 import { useCall } from "../../hooks/useCall"
+import styles from './styles.module.scss';
 
 export function CellPhonePlan() {
 
@@ -8,6 +9,7 @@ export function CellPhonePlan() {
 
     return (
         <select
+            className={styles.container}
             onChange={(e) => handleCellPhonePlan(e.target.value)}
         >
             <option>FaleMais 30</option>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color : #fff;
+    --secondary-color: #F7F7F7;
+    --third-color: #DFDFDE;
+    --border-inputs: #DFDFDE;
+    --input-font: #4a4d50;
+    --green: #22E0A1;
+    --green2: #86ddc0;
+}
+
+html{
+    font-size: 97.5%
+}
+
+body {
+    background: var(--primary-color);
+    color: #29292e;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+    font: 400 1rem "Roboto", sans-serif;
+}
+
+
+button, select{
+    cursor: pointer;
+
+    &:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+}

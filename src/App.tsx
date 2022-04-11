@@ -1,19 +1,15 @@
 import { CalculateCallValueButton } from './components/CalculateCallValueButton'
-import { CellPhonePlan } from './components/CellPhonePlan'
-import { ConnectionTime } from './components/ConnectionTime'
-import { Destination } from './components/Destination'
+import { CallInformation } from './components/CallInformations'
 import { FinalValues } from './components/FinalValues'
-import { Origin } from './components/Origin'
+import styles from "./styles/app.module.scss"
+import "./styles/global.scss"
 
 function App() {
 
   return (
-    <div>
+    <div className={styles.container}>
 
-      <Origin />
-      <Destination />
-      <ConnectionTime />
-      <CellPhonePlan/>
+      <CallInformation />
       <FinalValues />
       <CalculateCallValueButton />
 

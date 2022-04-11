@@ -1,4 +1,5 @@
 import { useCall } from "../../hooks/useCall"
+import styles from "./styles.module.scss"
 
 export function ConnectionTime() {
 
@@ -6,9 +7,11 @@ export function ConnectionTime() {
 
     return (
         <input
+            className={styles.input}
             type="number"
             name="connection-time"
             onChange={(e) => handleConnectionTime(parseInt(e.target.value))}
+            placeholder="Minutos da ligação"
             required
         />
     )

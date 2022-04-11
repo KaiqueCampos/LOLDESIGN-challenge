@@ -1,4 +1,5 @@
 import { useCall } from "../../hooks/useCall"
+import styles from './styles.module.scss'
 
 export function Origin() {
 
@@ -8,6 +9,7 @@ export function Origin() {
 
     return (
         <select
+            className={styles.container}
             onChange={(e) => handleCallOrigin(e.target.value)}
         >
             <option>011</option>

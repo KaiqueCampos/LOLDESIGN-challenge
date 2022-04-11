@@ -1,4 +1,5 @@
 import { useCall } from "../../hooks/useCall"
+import styles from './styles.module.scss'
 
 export function FinalValues() {
 
@@ -9,7 +10,7 @@ export function FinalValues() {
     } = useCall()
 
     return (
-        <div>
+        <div className={styles.container}>
             <div>
                 <h3>Preço sem o plano: ${priceWithoutPlan.toFixed(2)}</h3>
             </div>

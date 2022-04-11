@@ -1,0 +1,15 @@
+.container{
+    width: 38rem;
+    height: 3rem;
+    margin-top: 2rem;
+
+    border: none;
+    border-radius: 1rem;
+    background: var(--green);
+
+    transition: filter 0.2s;
+
+    &:hover{
+        filter: brightness(0.8);
+    }
+}

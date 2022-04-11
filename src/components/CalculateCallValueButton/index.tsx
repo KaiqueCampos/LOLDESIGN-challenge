@@ -1,4 +1,5 @@
 import { useCall } from "../../hooks/useCall"
+import styles from './styles.module.scss'
 
 export function CalculateCallValueButton() {
 
@@ -6,6 +7,7 @@ export function CalculateCallValueButton() {
 
     return (
         <button
+            className={styles.container}
             onClick={calculateCallValue}
         >
             Calcular
