@@ -9,12 +9,29 @@ export function CellPhonePlan() {
 
     return (
         <select
+            data-testid="cell-phone-plan"
             className={styles.container}
             onChange={(e) => handleCellPhonePlan(e.target.value)}
         >
-            <option>FaleMais 30</option>
-            <option>FaleMais 60</option>
-            <option>FaleMais 120</option>
+
+
+            <option
+                data-testid="cell-phone-plan-options"
+            >
+                FaleMais 30
+            </option>
+
+            <option
+                data-testid="cell-phone-plan-options"
+            >
+                FaleMais 60
+            </option>
+
+            <option
+                data-testid="cell-phone-plan-options"
+            >
+                FaleMais 120
+            </option>
         </select>
     )
 }

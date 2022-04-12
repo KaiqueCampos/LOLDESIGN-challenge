@@ -7,6 +7,7 @@ export function CalculateCallValueButton() {
 
     return (
         <button
+            data-testid="calculate-call-value-button"
             className={styles.container}
             onClick={calculateCallValue}
         >
