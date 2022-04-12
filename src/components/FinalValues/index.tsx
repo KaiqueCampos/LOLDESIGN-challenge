@@ -12,11 +12,13 @@ export function FinalValues() {
     return (
         <div className={styles.container}>
             <div>
-                <h3>Preço sem o plano: ${priceWithoutPlan.toFixed(2)}</h3>
+                <span>Preço sem o plano</span>
+                <h3>${priceWithoutPlan.toFixed(2)}</h3>
             </div>
 
             <div>
-                <h3>Preço com {cellPhonePlan} é de: ${priceWithPlan.toFixed(2)}</h3>
+                <span>Preço com o plano {cellPhonePlan}</span>
+                <h3>${priceWithPlan.toFixed(2)}</h3>
             </div>
         </div>
     )
