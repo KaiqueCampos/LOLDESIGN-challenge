@@ -10,17 +10,18 @@ export function Destination() {
 
     return (
         <select
+            data-testid="call-destination"
             className={styles.container}
             onChange={(e) => handleCallDestination(e.target.value)}
         >
             {callOrigin === "011" ? (
                 <>
-                    <option>016</option>
-                    <option>017</option>
-                    <option>018</option>
+                    <option data-testid="destination-ddd">016</option>
+                    <option data-testid="destination-ddd">017</option>
+                    <option data-testid="destination-ddd">018</option>
                 </>
             ) : (
-                <option>011</option>
+                <option data-testid="destination-ddd">011</option>
             )}
         </select>
     )

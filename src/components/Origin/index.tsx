@@ -9,13 +9,14 @@ export function Origin() {
 
     return (
         <select
+            data-testid="call-origin"
             className={styles.container}
             onChange={(e) => handleCallOrigin(e.target.value)}
         >
-            <option>011</option>
-            <option>016</option>
-            <option>017</option>
-            <option>018</option>
+            <option data-testid="origin-ddd">011</option>
+            <option data-testid="origin-ddd">016</option>
+            <option data-testid="origin-ddd">017</option>
+            <option data-testid="origin-ddd">018</option>
         </select>
     )
 }

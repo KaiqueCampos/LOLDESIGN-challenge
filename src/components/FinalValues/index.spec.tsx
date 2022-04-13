@@ -3,14 +3,8 @@ import App from "../../App"
 import { CallContextProvider } from "../../contexts/callContext"
 import { data } from '../../utils/data'
 
-describe("#Calculate Call Value Button component", () => {
-    test('should check if the calculate call value button is in the document', () => {
-        const { getByTestId } = render(<App />)
-
-        expect(getByTestId("calculate-call-value-button")).toBeTruthy()
-    })
-
-    test("must be able to calculate call value with plan and without plan", () => {
+describe('#FinalValues component', () => {
+    test('final values with plan and without plan must be returned', () => {
         const { getByText, getByTestId, getAllByTestId, getByPlaceholderText } = render(
             <CallContextProvider>
                 <App />
@@ -52,7 +46,7 @@ describe("#Calculate Call Value Button component", () => {
         expect((getByText(selectedCellPhoneOption) as HTMLOptionElement).selected).toBe(true)
         expect(selectedCellPhoneOption).toBe("FaleMais 60")
 
-       
+
         // Calculate call value 
         fireEvent.click(getByTestId("calculate-call-value-button"))
 
@@ -74,5 +68,12 @@ describe("#Calculate Call Value Button component", () => {
         expect(priceWithPlan.toFixed(2)).toBe(37.40.toFixed(2))
         expect(priceWithoutPlan.toFixed(2)).toBe(136.00.toFixed(2))
 
+        // Final Values
+
+        expect(getByText("Preço sem o plano")).toBeTruthy()
+        expect(getByText(`$${priceWithoutPlan.toFixed(2)}`)).toBeTruthy()
+
+        expect(getByText(`Preço com o plano ${selectedCellPhoneOption}`)).toBeTruthy()
+        expect(getByText(`$${priceWithPlan.toFixed(2)}`)).toBeTruthy()
     })
 })
