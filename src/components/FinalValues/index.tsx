@@ -1,5 +1,7 @@
 import { useCall } from "../../hooks/useCall"
 import styles from './styles.module.scss'
+import animate from '../../styles/animate.module.scss'
+
 
 export function FinalValues() {
 
@@ -10,7 +12,7 @@ export function FinalValues() {
     } = useCall()
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${animate.up1}`}>
             <div>
                 <span>Preço sem o plano</span>
                 <h3>${priceWithoutPlan?.toFixed(2)}</h3>
