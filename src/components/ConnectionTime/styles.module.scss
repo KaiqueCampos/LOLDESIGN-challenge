@@ -1,10 +1,18 @@
-.input {
-    padding: 0.4rem 1rem;
-    background: var(--secondary-color);
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 
-    border: 2px solid var(--border-inputs);
-    border-radius: 8px;
+  
 
-    color: var(--input-font);
-    font-family: Roboto, sans-serif;
+    .input {
+        padding: 0.4rem 1rem;
+        background: var(--secondary-color);
+
+        border: 2px solid var(--border-inputs);
+        border-radius: 8px;
+
+        color: var(--input-font);
+        font-family: Roboto, sans-serif;
+    }
 }

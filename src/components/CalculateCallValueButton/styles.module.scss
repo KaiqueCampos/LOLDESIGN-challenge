@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 38rem;
     height: 3rem;
     margin-top: 2rem;
@@ -12,7 +12,15 @@
 
     font-weight: 500;
 
-    &:hover{
+    &:hover {
         filter: brightness(0.8);
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 25rem;
+
+        font-size: 1.3rem
     }
 }

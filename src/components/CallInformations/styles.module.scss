@@ -1,6 +1,16 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+@media (max-width: 450px) {
+    .container {
+
+        width: 25rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

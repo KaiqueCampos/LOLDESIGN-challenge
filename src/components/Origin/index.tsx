@@ -8,15 +8,21 @@ export function Origin() {
     } = useCall()
 
     return (
-        <select
-            data-testid="call-origin"
-            className={styles.container}
-            onChange={(e) => handleCallOrigin(e.target.value)}
-        >
-            <option data-testid="origin-ddd">011</option>
-            <option data-testid="origin-ddd">016</option>
-            <option data-testid="origin-ddd">017</option>
-            <option data-testid="origin-ddd">018</option>
-        </select>
+        <div className={styles.container}>
+
+            <label>Origem</label>
+            <select
+                data-testid="call-origin"
+                className={styles.call_origin}
+                onChange={(e) => handleCallOrigin(e.target.value)}
+            >
+                <option data-testid="origin-ddd">011</option>
+                <option data-testid="origin-ddd">016</option>
+                <option data-testid="origin-ddd">017</option>
+                <option data-testid="origin-ddd">018</option>
+            </select>
+
+        </div>
+
     )
 }

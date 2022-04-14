@@ -1,10 +1,19 @@
-.container{
-    padding: 0.4rem 1rem;
-    background: var(--secondary-color);
-    
-    border: 2px solid var(--border-inputs);
-    border-radius: 8px;
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 
-    color: var(--input-font);
+    label{
+        color: var(--label);
+    }
 
+    .call_origin {
+        padding: 0.4rem 1rem;
+        background: var(--secondary-color);
+
+        border: 2px solid var(--border-inputs);
+        border-radius: 8px;
+
+        color: var(--input-font);
+    }
 }

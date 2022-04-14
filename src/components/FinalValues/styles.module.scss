@@ -27,3 +27,21 @@
         }
     }
 }
+
+@media (max-width: 450px) {
+    .container {
+        flex-direction: column;
+
+        div{
+            width: 25rem;
+
+            span{
+                font-size: 1.2rem;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

@@ -8,30 +8,35 @@ export function CellPhonePlan() {
     } = useCall()
 
     return (
-        <select
-            data-testid="cell-phone-plan"
-            className={styles.container}
-            onChange={(e) => handleCellPhonePlan(e.target.value)}
-        >
+        <div className={styles.container}>
 
+            <label>Plano de telefone</label>
 
-            <option
-                data-testid="cell-phone-plan-options"
+            <select
+                data-testid="cell-phone-plan"
+                className={styles.cell_phone_plan}
+                onChange={(e) => handleCellPhonePlan(e.target.value)}
             >
-                FaleMais 30
-            </option>
 
-            <option
-                data-testid="cell-phone-plan-options"
-            >
-                FaleMais 60
-            </option>
 
-            <option
-                data-testid="cell-phone-plan-options"
-            >
-                FaleMais 120
-            </option>
-        </select>
+                <option
+                    data-testid="cell-phone-plan-options"
+                >
+                    FaleMais 30
+                </option>
+
+                <option
+                    data-testid="cell-phone-plan-options"
+                >
+                    FaleMais 60
+                </option>
+
+                <option
+                    data-testid="cell-phone-plan-options"
+                >
+                    FaleMais 120
+                </option>
+            </select>
+        </div>
     )
 }
