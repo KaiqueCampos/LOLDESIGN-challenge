@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 0.2rem;
 
-  
 
     .input {
         padding: 0.4rem 1rem;
@@ -14,5 +13,10 @@
 
         color: var(--input-font);
         font-family: Roboto, sans-serif;
+    }
+
+    & input:focus {
+        outline: none;
+        border: 2px solid var(--green3);
     }
 }

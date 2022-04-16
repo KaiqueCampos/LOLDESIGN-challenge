@@ -26,6 +26,12 @@ html {
     }
 }
 
+@media (max-width: 450px) {
+    html {
+        font-size: 70%;
+    }
+}
+
 body {
     background: var(--primary-color);
     color: #29292e;

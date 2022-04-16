@@ -14,4 +14,7 @@
 
         color: var(--input-font);
     }
+    & .call_destination:focus {
+        border: 2px solid var(--green3);
+    }
 }

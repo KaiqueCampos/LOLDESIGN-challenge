@@ -25,7 +25,7 @@ export function CallContextProvider({ children }: AppContextProviderProps) {
 
     const [callOrigin, setCallOrigin] = useState("011")
     const [callDestination, setCallDestination] = useState("016")
-    const [cellPhonePlan, setCellPhonePlan] = useState("")
+    const [cellPhonePlan, setCellPhonePlan] = useState("FaleMais 30")
     const [connectionTime, setConnectionTime] = useState(0)
     const [priceWithoutPlan, setPriceWithoutPlan] = useState(0)
     const [priceWithPlan, setPriceWithPlan] = useState(0)

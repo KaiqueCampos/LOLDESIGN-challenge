@@ -12,4 +12,9 @@
 
         color: var(--input-font);
     }
+
+    & .cell_phone_plan:focus {
+        outline: none;
+        border: 2px solid var(--green3);
+    }
 }
