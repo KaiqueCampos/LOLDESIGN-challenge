@@ -2,6 +2,7 @@
   "name": "loldesign_showmethecode",
   "private": true,
   "version": "0.0.0",
+  "homepage": "loldesign_showmethecode.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
