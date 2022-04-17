@@ -5,8 +5,10 @@
     justify-content: center;
     gap: 1rem;
 
+    width: 100%;
+
     div {
-        width: 18.55rem;
+        width: 100%;
         height: 5rem;
 
         display: flex;
@@ -33,7 +35,6 @@
         flex-direction: column;
 
         div{
-            width: 25rem;
 
             span{
                 font-size: 1.2rem;
