@@ -1,7 +1,7 @@
 <h1 align='center'>LOLDESIGN - Show me the code</h1>
 <br>
 
-![Captura de Tela (974)](https://user-images.githubusercontent.com/70600553/163661459-9df03347-dc98-40a1-9edb-e0793dc71906.png)
+![Captura de Tela (975)](https://user-images.githubusercontent.com/70600553/163700565-aa6b2c03-af60-40f8-8ded-c36a2264fd8c.png)
 
 # 📕 About this project
 
